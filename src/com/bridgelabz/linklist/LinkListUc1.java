@@ -1,18 +1,62 @@
 package com.bridgelabz.linklist;
 
 import java.util.LinkedList;
-
 public class LinkListUc1 {
+    /*
+    Use Case 2
+    */
+    // declaring type of head
+    public Node head;
 
-    public static void main(String[] args) {
-        //Use Case 1
-        LinkedList<Integer> l1 = new LinkedList<>();
-        l1.addFirst(56);
-        l1.add(1, 30);
-        l1.addLast(70);
-        for (int i = 0; i < l1.size(); i++) {
-            System.out.print(l1.get(i) + " ->");
-            System.out.print("NULL");
+
+    // create node class
+    class Node {
+        int data;
+        Node next;
+
+        //constructor for Node Class
+        Node(int data) {
+            this.data = data;
+            this.next = null;
         }
     }
+
+    //function to add element
+    public void addFirst(int data) {
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+            return;
+        } else {
+            newNode.next = head;
+            head = newNode;
+
+        }
+    }
+
+    //printing element of linked list
+    public void printList() {
+        if (head == null) {
+            System.out.println("List is empty ");
+            return;
+        }
+        Node currNode = head;
+        while (currNode != null) {
+            System.out.print(currNode.data + " -> ");
+            currNode = currNode.next;
+        }
+        System.out.println("NULL");
+    }
+
+    public static void main(String[] args) {
+        LinkListUc1 list = new LinkListUc1();
+        list.addFirst(70); // add 70 and create head at 70
+        list.printList();
+        list.addFirst(30); //add 30 and move head at 30
+        list.printList();
+        list.addFirst(56);// add 56 and move head at 56
+        list.printList();
+
+    }
 }
+
