@@ -5,6 +5,7 @@ public class MyMapNode<K , V > implements INode <K> {
     V  value;
     MyMapNode <K , V> next;
 
+
     public MyMapNode(K key , V value){
         this.key =key;
         this.value = value;

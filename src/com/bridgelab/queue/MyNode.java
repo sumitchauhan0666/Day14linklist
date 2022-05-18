@@ -1,6 +1,8 @@
 package com.bridgelab.queue;
 
 public class MyNode<K extends Comparable> implements INode<K> {
+
+
     private K key;
     private INode next;
 

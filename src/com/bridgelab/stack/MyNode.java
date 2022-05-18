@@ -1,6 +1,7 @@
 package com.bridgelab.stack;
 
 public class MyNode<K extends Comparable> implements INode<K> {
+
     private K key;
     private INode next;
 

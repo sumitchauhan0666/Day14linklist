@@ -1,6 +1,7 @@
 package com.bridgelab.stack;
 
 public class MyLinkedList {
+
     public   INode head;
     public   INode tail;
 

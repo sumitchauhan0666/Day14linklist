@@ -3,6 +3,7 @@ package com.bridgelab.stack;
 public class MyStack {
     private final MyLinkedList myLinkedList;
 
+
     public MyStack() {
         this.myLinkedList = new MyLinkedList();
     }

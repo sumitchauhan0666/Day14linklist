@@ -2,6 +2,7 @@ package com.bridgelab.binarysearchtree;
 
 public class MyBinaryTreeMain {
 
+
     public static void main(String[] args) {
 
         MyBinaryTree<Integer> myBinaryTree = new MyBinaryTree<>();

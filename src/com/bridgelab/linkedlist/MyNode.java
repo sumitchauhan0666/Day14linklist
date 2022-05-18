@@ -1,6 +1,7 @@
 package com.bridgelab.linkedlist;
 
 public class MyNode<K extends Comparable> implements INode<K> {
+
     private K key;
     private INode next;
 
